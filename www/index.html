@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<title>r</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/pageSkin.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+.rei-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.rei-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="rei-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="rei-sidebar rei-bar-block rei-white rei-collapse rei-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="rei-container rei-display-container rei-padding-16">
+    <i onclick="rei_close()" class="fa fa-remove rei-hide-large rei-button rei-display-topright"></i>
+<img class="d-block img-fluid" src="img/logo.png" style="width:60%" alt="First slide">
+  <div class="rei-padding-64 rei-large rei-text-grey" style="font-weight:bold">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="rei-button rei-block rei-white rei-left-align" id="myBtn"><i class="fa fa-fw fa-lock"></i>Shop Products</a>
+        <div id="demoAcc" class="rei-bar-block rei-hide rei-padding-large rei-medium">
+      <a href="#" class="rei-bar-item rei-button rei-light-grey"><i class="fa fa-caret-right rei-margin-right"></i>Women's Clothing</a>
+      <a href="#" class="rei-bar-item rei-button">Men's Clothing</a>
+     <a href="#" class="rei-bar-item rei-button">Footwear</a>
+      <a href="#" class="rei-bar-item rei-button">Camping and Hking</a>
+  </div>
+
+    <a href="#" class="rei-bar-item rei-button"><i class="fa fa-fw fa-lock"></i>Shop Brands</a>
+   <!-- <a onclick="myAccFunc()" href="javascript:void(0)" class="rei-button rei-block rei-white rei-left-align" id="myBtn">
+      Jeans <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="rei-bar-block rei-hide rei-padding-large rei-medium">
+      <a href="#" class="rei-bar-item rei-button rei-light-grey"><i class="fa fa-caret-right rei-margin-right"></i>Skinny</a>
+      <a href="#" class="rei-bar-item rei-button">Relaxed</a>
+     <a href="#" class="rei-bar-item rei-button">Bootcut</a>
+      <a href="#" class="rei-bar-item rei-button">Straight</a>-->
+    <a href="#" class="rei-bar-item rei-button"><i class="fa fa-fw fa-lock"></i>Shop REI Outlet</a>
+    <a href="#" class="rei-bar-item rei-button"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a>
+    <a href="#" class="rei-bar-item rei-button"><i class="fa fa-fw fa-user"></i>Account</a>
+    <a href="#" class="rei-bar-item rei-button"><i class="fa fa-fw fa-map-marker"></i>Store Locator</a>
+        </div>
+
+  </div>
+  <a href="#footer" class="rei-bar-item rei-button rei-padding"><i class="fa fa-fw fa-phone-square"></i>Help and Support</a> 
+  <a href="javascript:void(0)" class="rei-bar-item rei-button rei-padding" onclick="document.getElementById('newsletter').style.display='block'"><i class="fa fa-fw fa-anchor"></i>Subscribe</a> 
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="rei-bar rei-top rei-hide-large rei-black rei-xlarge">
+      <a href="javascript:void(0)" class="rei-bar-item rei-button rei-padding-24 rei-left" onclick="rei_open()"><i class="fa fa-bars"></i></a>
+
+<img class="w3-bar-item w3-padding-24 w3-wide" src="img/logo-white.png" style="height:60px" alt="logo">
+      <i class="fa fa-shopping-cart rei-bar-item rei-button rei-padding-24 rei-right"></i>
+      <i class="fa fa-search rei-bar-item rei-button rei-padding-24 rei-right"></i>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="rei-overlay rei-hide-large" onclick="rei_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="rei-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="rei-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="rei-container rei-xlarge">
+  <!--  <p class="rei-right">
+        Jeans
+    </p>-->
+  </header>
+
+  <!-- Image header -->
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+    <!--  <div class="item active">
+      <img class="d-block img-fluid" src="img/kenai.jpg" style="width:100%" alt="First slide">
+        <div class="carousel-caption">
+        </div>
+      </div>-->
+
+      <div class="item active">
+      <img class="d-block img-fluid" src="img/convict.png" style="width:100%" alt="Third slide">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    
+      <div class="item">
+      <img class="d-block img-fluid" src="img/reyes.jpg" style="width:100%" alt="Second slide">
+        <div class="carousel-caption">
+        </div>
+      </div>
+  
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="rei-container rei-text-grey" id="jeans">
+   <!-- <p>8 items</p>--><br>
+  </div
+
+  <!-- Product grid -->
+  <div class="rei-row rei-grayscale">
+
+       <!-- <img src="/reiimages/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>-->
+
+
+        <div class="list-group m-b-large rei-xlarge"> 
+    <a href="#" class="list-group-item"> <i class="fa fa-chevron-right"></i> 
+        </i>Shop Products</a> 
+        <a href="#" class="list-group-item"> <i class="fa fa-chevron-right"></i> 
+        </i>Shop Brands</a> 
+        <a href="#" class="list-group-item"> <i class="fa fa-chevron-right"></i> 
+        </i>Shop REI Outlet</a> 
+   </div>
+      </div>
+      
+   <!--   <div class="rei-container">
+        <img src="/reiimages/jeans2.jpg" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+    </div>
+
+    <div class="rei-col l3 s6">
+      <div class="rei-container">
+          <img src="img/tent.jpeg" style="width:100%">
+        <p>REI Co-OP Tent for 2<br><b>$199.99</b></p>
+      </div>
+      <div class="rei-container">
+        <img src="img/jacket.jpeg" style="width:100%">
+        <p>Jacket<br><b>$120.50</b></p>
+      </div>
+    </div>
+
+    <div class="rei-col l3 s6">
+      <div class="rei-container">
+        <img src="img/shoes.jpeg" style="width:100%">
+        <p>Shoes<br><b>$60.50</b></p>
+      </div>
+      <div class="rei-container">
+          <img src="img/bag.jpeg" style="width:100%">
+        </div>
+        <p>Backpacking bagpack<br><b class="rei-text-red">$149.99</b></p>
+      </div>-->
+
+  <!--  <div class="rei-col l3 s6">
+      <div class="rei-container">
+        <img src="/reiimages/jeans4.jpg" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+      </div>
+      <div class="rei-container">
+        <img src="/reiimages/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+    </div>-->
+  </div>  <!-- !PAGE CONTENT! -->
+
+
+  
+  <!-- Footer -->
+  <footer class="rei-padding-15 rei-light-grey rei-small rei-center" id="footer">
+    <p> The REI Difference</p>
+            <p><a href="#">Find store</a></p>
+                    <p><a href="#">Shipment</a></p>
+
+
+
+     <!-- <div class="rei-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="rei-input rei-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="rei-input rei-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="rei-input rei-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="rei-input rei-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="rei-button rei-block rei-black">Send</button>
+        </form>
+      </div>-->
+
+    <!--  <div class="rei-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+      </div>-->
+
+     <!-- <div class="rei-col s4 rei-justify">
+        <i class="fa fa-facebook-official rei-hover-opacity rei-large"></i>
+        <i class="fa fa-instagram rei-hover-opacity rei-large"></i>
+        <i class="fa fa-snapchat rei-hover-opacity rei-large"></i>
+        <i class="fa fa-pinterest-p rei-hover-opacity rei-large"></i>
+        <i class="fa fa-twitter rei-hover-opacity rei-large"></i>
+        <i class="fa fa-linkedin rei-hover-opacity rei-large"></i>
+
+      </div>-->
+  </footer>
+
+
+  <!-- End page content -->
+</div>
+
+
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="rei-modal">
+  <div class="rei-modal-content rei-animate-zoom" style="padding:32px">
+    <div class="rei-container rei-white rei-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove rei-right rei-button rei-transparent rei-xxlarge"></i>
+      <h2 class="rei-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="rei-input rei-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="rei-button rei-padding-large rei-red rei-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("rei-show") == -1) {
+        x.className += " rei-show";
+    } else {
+        x.className = x.className.replace(" rei-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function rei_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function rei_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
