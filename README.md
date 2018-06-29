@@ -1,1 +1,1 @@
-# Salesforce-Einstein-and-REI
+# Salesforce-Einstein-and-PhoneGap
