@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="js/reiProducts.js"></script>
+<script src="jquery-3.3.1.min.js"></script>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
@@ -22,176 +26,117 @@
       <i class="fa fa-search rei-bar-item rei-button rei-padding-24 rei-right"></i>
 </header>
 
-
 <div class="rei-main" style="margin-left:250px">
-
   <!-- Push down content on small screens -->
   <div class="rei-hide-large" style="margin-top:83px"></div>
-  
   <!-- Top header -->
-  <header class="rei-container rei-xlarge">
-  <!--  <p class="rei-right">
-        Jeans
-    </p>-->
-  </header>
 
  <div class="rei-container rei-black rei-padding-22">
     <h1>Women's Jackets</h1>
   </div>
- <!-- <ul>
-  <li><img class="d-block img-fluid rei-header-logo" src="img/womensJacket/jacket1.jpeg"></li>
-  <li><img class="d-block img-fluid rei-header-logo" src="img/womensJacket/jacket2.jpeg"></li>
-  <li><img class="d-block img-fluid rei-header-logo" src="img/womensJacket/jacket3.jpeg"></li>
-  <li><img class="d-block img-fluid rei-header-logo" src="img/womensJacket/jacket4.jpeg"></li>
--->
-<div class="rei-grid-wrapper">
-  <div class="rei-grid-item">
-    <img class="d-block img-fluid" src="img/womensJacket/jacket1.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>
-  <div class="rei-grid-item">
-    <img class="d-block img-fluid" src="img/womensJacket/jacket2.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>
-  <div class="rei-grid-item">
-    <img class="d-block img-fluid" src="img/womensJacket/jacket3.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>  
-  <div class="rei-grid-item">
-    <img class="d-block img-fluid" src="img/womensJacket/jacket4.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>
-  <div class="rei-grid-item"> 
-    <img class="d-block img-fluid" src="img/womensJacket/jacket6.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>
-  <div class="rei-grid-item">
-    <img class="d-block img-fluid" src="img/womensJacket/jacket10.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>  
-  <div class="rei-grid-item">
-    <img class="d-block img-fluid" src="img/womensJacket/jacket7.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>
-  <div class="rei-grid-item">
-    <img class="d-block img-fluid" src="img/womensJacket/jacket8.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>
-  <div class="rei-grid-item">
-    <img class="d-block img-fluid" src="img/womensJacket/jacket9.jpeg" style="width:100%">
-    <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-  </div>  
+
+<div class="flex-grid-thirds">
+  <div class="col">   
+    <img id="jacket1" class="d-block img-fluid rei_product" src="img/womensJacket/jacket1.jpeg" onClick="swipe(this.id)" style="width:100%">
+       <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+</div>
+  <div class="col">    
+    <img id="jacket2" class="d-block img-fluid rei_product" src="img/womensJacket/jacket2.jpeg" onClick="swipe(this.id)" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+
+</div>
+  <div class="col">   
+   <img id="jacket3" class="d-block img-fluid rei_product" src="img/womensJacket/jacket3.jpeg" onClick="swipe(this.id)" style="width:100%">
+       <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+</div>
+  <div class="col">    
+    <img id="jacket4" class="d-block img-fluid rei_product" src="img/womensJacket/jacket4.jpeg" onClick="swipe(this.id)" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+</div>
+  <div class="col">    
+    <img id="jacket6" class="d-block img-fluid rei_product" src="img/womensJacket/jacket6.jpeg" onClick="swipe(this.id)" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+</div>
+  <div class="col">    
+    <img id="jacket7" class="d-block img-fluid rei_product" src="img/womensJacket/jacket7.jpeg" onClick="swipe(this.id)" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+</div>
+  <div class="col">    
+    <img id="jacket8" class="d-block img-fluid rei_product" src="img/womensJacket/jacket8.jpeg" onClick="swipe(this.id)" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+</div>
+  <div class="col">    
+    <img id="jacket9" class="d-block img-fluid rei_product" src="img/womensJacket/jacket9.jpeg" onClick="swipe(this.id)" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+</div>
+  <div class="col">    
+    <img id="jacket10" class="d-block img-fluid rei_product" src="img/womensJacket/jacket10.jpeg" onClick="swipe(this.id)" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+
+</div>
 </div>
 
-<!--
-  <div class="rei-row rei-grayscale">
-    <div class="rei-col l3 s6">
-      <div class="rei-container">
-<img src="img/womensJacket/jacket1.jpeg" style="width:50%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-      <div class="rei-container">
-<img src="img/womensJacket/jacket2.jpeg" style="width:50%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-    </div>
--->
+<!--<div id="image-holder-modal" class="rei-modal">
+  <div class="rei-modal-content rei-animate-zoom" style="padding:40% 0 98% 0">
+    <div class="rei-container rei-white rei-top">
 
-<!--<div class="col-sm-3"> 
-<img class="d-block img-fluid rei-header-logo" src="img/logo.png">
-  <section class="panel"> <div class="panel-body">col-lg-6</div> 
-  </section> </div>
+      <i onclick="document.getElementById('image-holder-modal').style.display='none'" class="fa fa-remove rei-right rei-button rei-transparent rei-large"></i>
 
-  <div class="col-lg-3"> 
-    <img class="d-block img-fluid rei-header-logo" src="img/logo.png">
+      <h2 class="rei-wide"></h2>
+      <img id="image-holder" class="image-holder-class rei-center" alt="">
+     <button type="button" class="rei-button rei-padding-large rei-red rei-margin-bottom" onclick="document.getElementById('image-holder-modal').style.display='none'">Add to cart</button>
 
-    <section class="panel"> <div class="panel-body">col-lg-3</div>
-     </section> </div>-->
-
-<!--
-  <div class="col-sm-2"> 
-<img class="d-block img-fluid rei-header-logo" src="img/logo.png">
-  <section class="panel"> <div class="panel-body">col-lg-6</div> 
-  </section> </div>
-  <div class="col-sm-2"> 
-<img class="d-block img-fluid rei-header-logo" src="img/logo.png">
-  <section class="panel"> <div class="panel-body">col-lg-6</div> 
-  </section> </div>
-  <div class="col-sm-2"> 
-<img class="d-block img-fluid rei-header-logo" src="img/logo.png">
-  <section class="panel"> <div class="panel-body">col-lg-6</div> 
-  </section> </div>
-
-<div class="col-sm-2"> <section class="panel"> <div class="panel-body">col-lg-6</div> </section> </div>
-<div class="col-sm-2"> <section class="panel"> <div class="panel-body">col-lg-6</div> </section> </div>
-<div class="col-sm-2"> <section class="panel"> <div class="panel-body">col-lg-6</div> </section> </div>
-<div class="col-sm-2"> <section class="panel"> <div class="panel-body">col-lg-6</div> </section> </div>
-<div class="col-sm-2"> <section class="panel"> <div class="panel-body">col-lg-6</div> </section> </div>
--->
-
-<!--<div class="rei-row-padding-22 rei-margin-bottom">
-    <div class="rei-quarter">
-  <div class="rei-row">
-
-    <div class="rei-col l3 s6">
-      <div class="rei-container">
-        <img src="/img/jeans1.jpg" style="width:100%">
-        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
-      </div>
-      <div class="rei-container">
-        <img src="/img/jeans2.jpg" style="width:100%">
-        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
-      </div>
-    </div>
   </div>
 </div>
 </div>-->
 
- <!-- <div class="rei-row-padding rei-margin-bottom">
-    <div class="rei-quarter">
-      <div class="rei-container rei-red rei-padding-16">
-        <div class="rei-left"><i class="fa fa-comment rei-xxxlarge"></i></div>
-        <div class="rei-right">
-          <h3>52</h3>
-        </div>
-        <div class="rei-clear"></div>
-        <h4>Messages</h4>
-      </div>
+<div id="image-holder-modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <div class="modal-content-image">
+      <img id="image-holder" class="image-holder-class" style="width=100%" alt="">
     </div>
-    <div class="rei-quarter">
-      <div class="rei-container rei-blue rei-padding-16">
-        <div class="rei-left"><i class="fa fa-eye rei-xxxlarge"></i></div>
-        <div class="rei-right">
-          <h3>99</h3>
-        </div>
-        <div class="rei-clear"></div>
-        <h4>Views</h4>
-      </div>
-    </div>
-    <div class="rei-quarter">
-      <div class="rei-container rei-teal rei-padding-16">
-        <div class="rei-left"><i class="fa fa-share-alt rei-xxxlarge"></i></div>
-        <div class="rei-right">
-          <h3>23</h3>
-        </div>
-        <div class="rei-clear"></div>
-        <h4>Shares</h4>
-      </div>
-    </div>
-    <div class="rei-quarter">
-      <div class="rei-container rei-orange rei-text-white rei-padding-16">
-        <div class="rei-left"><i class="fa fa-users rei-xxxlarge"></i></div>
-        <div class="rei-right">
-          <h3>50</h3>
-        </div>
-        <div class="rei-clear"></div>
-        <h4>Users</h4>
-      </div>
-    </div>
-  </div>-->
+  </div>
 
 </div>
 
-</body>
 
+</body>
 </html>
+<script>
+function swipe(clicked_id) {
+  var img = document.getElementById('image-holder');
+  var id = clicked_id;
+  img.src = "img/womensJacket/"+clicked_id+".jpeg";
+  img.style.display = 'inline';
+  //img.style.padding = "50% 50% 50% 30%";
+
+      document.getElementById("image-holder-modal").style.display="block";
+
+
+}
+
+// Get the modal
+var modal = document.getElementById('image-holder-modal');
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
