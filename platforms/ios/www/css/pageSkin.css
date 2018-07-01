@@ -61,6 +61,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .rei-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .rei-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .rei-bar{width:100%;overflow:hidden}.rei-center .rei-bar{display:inline-block;width:auto}
+.rei-header-logo{height:40%;width:20%;position:center;left:10;top:20;padding-top: 15px;}
+.rei-header-logo-other{padding-top: 15px;}
 .rei-bar .rei-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 .rei-bar .rei-dropdown-hover,.rei-bar .rei-dropdown-click{position:static;float:left}
 .rei-bar .rei-button{white-space:normal}

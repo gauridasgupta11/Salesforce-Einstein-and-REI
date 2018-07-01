@@ -25,16 +25,20 @@ body,h1,h2,h3,h4,h5,h6,.rei-wide {font-family: "Montserrat", sans-serif;}
 <!-- Sidebar/menu -->
 <nav class="rei-sidebar rei-bar-block rei-white rei-collapse rei-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="rei-container rei-display-container rei-padding-16">
-    <i onclick="rei_close()" class="fa fa-remove rei-hide-large rei-button rei-display-topright"></i>
-<img class="d-block img-fluid" src="img/logo.png" style="width:60%" alt="First slide">
+    <i onclick="rei_close()" class="fa fa-remove rei-hide-large rei-button rei-display-topright"></i><br>
+<img class="d-block img-fluid rei-header-logo" src="img/logo.png" style="width:60%">
   <div class="rei-padding-64 rei-large rei-text-grey" style="font-weight:bold">
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="rei-button rei-block rei-white rei-left-align" id="myBtn"><i class="fa fa-fw fa-lock"></i>Shop Products</a>
+        <a href="#" class="rei-bar-item rei-button" onclick="rei_close()"><i class="fa fa-fw fa-home"></i>Home</a>
+
+     <a href="#" class="rei-bar-item rei-button" onclick="window.location.href='shopProductsPage.html'"><i class="fa fa-fw fa-lock"></i>Shop Products</a>
+
+  <!--  <a onclick="myAccFunc()" href="javascript:void(0)" class="rei-button rei-block rei-white rei-left-align" id="myBtn"><i class="fa fa-fw fa-lock"></i>Shop Products</a>
         <div id="demoAcc" class="rei-bar-block rei-hide rei-padding-large rei-medium">
-      <a href="#" class="rei-bar-item rei-button rei-light-grey"><i class="fa fa-caret-right rei-margin-right"></i>Women's Clothing</a>
+      <a id="womensClothing" href="#" class="rei-bar-item rei-button rei-light-grey" onclick="window.location.href='womensClothing.html'"><i class="fa fa-caret-right rei-margin-right"></i>Women's Clothing</a>
       <a href="#" class="rei-bar-item rei-button">Men's Clothing</a>
      <a href="#" class="rei-bar-item rei-button">Footwear</a>
       <a href="#" class="rei-bar-item rei-button">Camping and Hking</a>
-  </div>
+  </div>-->
 
     <a href="#" class="rei-bar-item rei-button"><i class="fa fa-fw fa-lock"></i>Shop Brands</a>
    <!-- <a onclick="myAccFunc()" href="javascript:void(0)" class="rei-button rei-block rei-white rei-left-align" id="myBtn">
@@ -53,15 +57,17 @@ body,h1,h2,h3,h4,h5,h6,.rei-wide {font-family: "Montserrat", sans-serif;}
 
   </div>
   <a href="#footer" class="rei-bar-item rei-button rei-padding"><i class="fa fa-fw fa-phone-square"></i>Help and Support</a> 
-  <a href="javascript:void(0)" class="rei-bar-item rei-button rei-padding" onclick="document.getElementById('newsletter').style.display='block'"><i class="fa fa-fw fa-anchor"></i>Subscribe</a> 
+<!--  <a href="javascript:void(0)" class="rei-bar-item rei-button rei-padding" onclick="document.getElementById('newsletter').style.display='block'" onclick="subscribeREI()"><i class="fa fa-fw fa-anchor"></i>Subscribe</a> -->
+<a href="javascript:void(0)" class="rei-bar-item rei-button rei-padding" onclick = "subscribeREI()"><i class="fa fa-fw fa-anchor"></i>Subscribe</a> 
 
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="rei-bar rei-top rei-hide-large rei-black rei-xlarge">
+
+<img class="w3-bar-item w3-padding-24 w3-wide rei-header-logo" src="img/logo-white.png" alt="logo">
       <a href="javascript:void(0)" class="rei-bar-item rei-button rei-padding-24 rei-left" onclick="rei_open()"><i class="fa fa-bars"></i></a>
 
-<img class="w3-bar-item w3-padding-24 w3-wide" src="img/logo-white.png" style="height:60px" alt="logo">
       <i class="fa fa-shopping-cart rei-bar-item rei-button rei-padding-24 rei-right"></i>
       <i class="fa fa-search rei-bar-item rei-button rei-padding-24 rei-right"></i>
 </header>
@@ -134,7 +140,7 @@ body,h1,h2,h3,h4,h5,h6,.rei-wide {font-family: "Montserrat", sans-serif;}
 
 
         <div class="list-group m-b-large rei-xlarge"> 
-    <a href="#" class="list-group-item"> <i class="fa fa-chevron-right"></i> 
+    <a href="#" class="list-group-item" onclick="window.location.href='shopProductsPage.html'"> <i class="fa fa-chevron-right"></i> 
         </i>Shop Products</a> 
         <a href="#" class="list-group-item"> <i class="fa fa-chevron-right"></i> 
         </i>Shop Brands</a> 
@@ -268,6 +274,13 @@ function rei_open() {
 function rei_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
+}
+
+function subscribeREI(){
+
+    rei_close();
+    document.getElementById("newsletter").style.display="block";
+
 }
 </script>
 
