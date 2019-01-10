@@ -1,1 +1,1 @@
-# Salesforce-Einstein-and-PhoneGap
+# Machine learning shopping app, using photos
